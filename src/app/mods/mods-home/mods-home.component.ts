@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ModsHomeComponent {
   modalOpen = false;
-
+  items = [
+    {title : 'Angular test', content: 'lorem lorem lorem'},
+    {title : 'Angular test', content: 'lorem lorem lorem'},
+    {title : 'Angular test', content: 'lorem lorem lorem'},
+  ]
   toggleModel() {
     this.modalOpen = !this.modalOpen
   }

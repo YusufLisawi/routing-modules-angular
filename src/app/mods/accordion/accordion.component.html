@@ -1,0 +1,11 @@
+<div class="ui accordion styled">
+  <ng-container *ngFor="let item of data">
+    <div class="title">
+      <i class="dropdown icon"></i>
+      {{ item.title }}
+    </div>
+    <div class="content active">
+      <p>{{ item.content }}</p>
+    </div>
+  </ng-container>
+</div>

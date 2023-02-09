@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./mods-home.component.css']
 })
 export class ModsHomeComponent {
+  modalOpen = false;
+
+  toggleModel() {
+    this.modalOpen = !this.modalOpen
+  }
 
 }

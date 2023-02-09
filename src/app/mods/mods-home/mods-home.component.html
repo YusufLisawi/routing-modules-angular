@@ -1,1 +1,9 @@
-<p>mods-home works!</p>
+<app-divider> Modal </app-divider>
+<button (click)="toggleModel()" class="ui button">Show modal</button>
+<app-modal (close)="toggleModel()" *ngIf="modalOpen">
+	<div modalTitle>Modal</div>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, perferendis.</p>
+	<ng-container modalFooter>
+		<button (click)="toggleModel()" class="ui button">Okay!</button>
+	</ng-container>
+</app-modal>

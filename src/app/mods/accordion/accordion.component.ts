@@ -7,4 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class AccordionComponent {
   @Input() data: any[] = [];
+  openedItemIndex = 0;
+
+  onClick(index: number) {
+    if (index === this.openedItemIndex)
+      this.openedItemIndex = -1;
+    else
+      this.openedItemIndex = index;
+  }
 }
